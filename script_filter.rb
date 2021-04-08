@@ -3,7 +3,7 @@
 require 'json'
 
 Item = Struct.new(:title, :subtitle, :arg, :icon, keyword_init: true) {
-  def to_h
+  def to_json(_ = nil)
     return {
       uid: title,
       title: title,
@@ -12,7 +12,7 @@ Item = Struct.new(:title, :subtitle, :arg, :icon, keyword_init: true) {
       icon: {
         path: icon
       }
-    }
+    }.to_json
   end
 }
 
@@ -25,7 +25,7 @@ module Items
 
   def self.to_json(_ = nil)
     return {
-      items: @items.map(&:to_h),
+      items: @items,
       variables: {
         input: ENV['selected_text']
       }
