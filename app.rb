@@ -6,5 +6,4 @@ module Commander
   end
 end
 
-print "hell"
-# print Commander.public_class_method(ARGV.first, ENV.fetch('input'))
+print Commander.public_send(ARGV.first, ENV.fetch('selected_text'))
