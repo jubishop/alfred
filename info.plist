@@ -301,6 +301,8 @@
 	<dict>
 		<key>243F8880-E680-4CA0-BB5F-1A1790F85539</key>
 		<dict>
+			<key>note</key>
+			<string>Launch resize_string command.</string>
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
