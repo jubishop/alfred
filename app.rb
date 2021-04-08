@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 
-command = ARGV.first
-input = ENV['input']
+module Commander
+  def self.reverse_string(input)
+    return input.reverse
+  end
+end
 
-print input.reverse if command == 'reverse_string'
+print "hell"
+# print Commander.public_class_method(ARGV.first, ENV.fetch('input'))
