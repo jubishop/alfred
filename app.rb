@@ -3,6 +3,4 @@
 command = ARGV.first
 input = ENV['input']
 
-if (command == 'reverse_string')
-	print input.reverse
-end
+print input.reverse if command == 'reverse_string'
