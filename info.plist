@@ -86,6 +86,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C9E6917F-FBB7-410D-852E-4B4D1C98987F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0B381CD-7574-41E8-B68B-5727445C562B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D53B1A34-7AE8-4FBC-8A40-81FFE30D2695</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C9E6917F-FBB7-410D-852E-4B4D1C98987F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Justin Bishop</string>
@@ -290,19 +316,74 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D53B1A34-7AE8-4FBC-8A40-81FFE30D2695</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>reverse_list</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>selected_text</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C9E6917F-FBB7-410D-852E-4B4D1C98987F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Right click on the workflow and select "Open in Finder".  Then you'll find the two scripts that matter.  
 
-`script_filter.rb` defines the icons and actions you can select.
+`script_filter.rb` defines the icons and actions you can select using `lib/items.rb
 
-`app.rb` executes on those actions.</string>
+`app.rb` executes on those actions using `lib/commander.rb`
+
+RSpec unit tests are in `spec/commander_spec.rb`
+
+Run `bundler install` and then `rake` to execute lint and unit tests.</string>
 	<key>uidata</key>
 	<dict>
 		<key>243F8880-E680-4CA0-BB5F-1A1790F85539</key>
 		<dict>
 			<key>note</key>
-			<string>Launch resize_string command.</string>
+			<string>Launch reverse_string command.</string>
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
@@ -313,14 +394,14 @@
 			<key>note</key>
 			<string>script_filter.rb.</string>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>395</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
 		<key>6CA6EDDD-6FD3-420D-AF3E-EA3EA6010BF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>325</integer>
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
@@ -343,7 +424,7 @@
 			<key>note</key>
 			<string>app.rb</string>
 			<key>xpos</key>
-			<integer>685</integer>
+			<integer>705</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -355,6 +436,22 @@
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>40</integer>
+		</dict>
+		<key>C9E6917F-FBB7-410D-852E-4B4D1C98987F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>445</integer>
+		</dict>
+		<key>D53B1A34-7AE8-4FBC-8A40-81FFE30D2695</key>
+		<dict>
+			<key>note</key>
+			<string>Launch reverse_list command.</string>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>415</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
