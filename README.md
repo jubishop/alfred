@@ -1,4 +1,6 @@
-# Alfred
+# Alfred Power Snippet Workflow
+
+[![RSpec Status](https://github.com/jubishop/alfred/workflows/RSpec/badge.svg)](https://github.com/jubishop/alfred/actions/workflows/rspec.yml)  [![Rubocop Status](https://github.com/jubishop/alfred/workflows/Rubocop/badge.svg)](https://github.com/jubishop/alfred/actions/workflows/rubocop.yml)
 
 ## User Installation
 
