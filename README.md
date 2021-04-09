@@ -25,4 +25,7 @@ Go export the workflow and then copy it back into the workflow directory.  `git 
 
 ## Usage
 
-Basic setup for creating your own programmatic power snippets of selected text.
+Basic setup for creating your own programmatic power snippets to manipulate the currently selected text. Supported operations:
+
+- `Reverse String`
+- `Reverse List`
