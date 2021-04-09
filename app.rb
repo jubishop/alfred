@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 
-module Commander
-  def self.reverse_string(input)
-    return input.reverse
-  end
-end
+require_relative 'lib/commander'
 
 print Commander.public_send(ARGV.first, ENV.fetch('selected_text'))

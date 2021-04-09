@@ -21,4 +21,8 @@ Now updates to `app.rb` and `script_filter.rb` will be reflected immediately in 
 
 ### To push new changes:
 
-Go export the workflow and then copy it back into the workflow directory.  `git add` it and push it along with all other changes.
+Go export the workflow and then copy it back into the workflow directory.  `git add` it and pull request it along with all other changes.
+
+## Usage
+
+Basic setup for creating your own programmatic power snippets of selected text.
