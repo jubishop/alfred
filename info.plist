@@ -371,7 +371,7 @@
 	<key>readme</key>
 	<string>Right click on the workflow and select "Open in Finder".  Then you'll find the two scripts that matter.  
 
-`script_filter.rb` defines the icons and actions you can select using `lib/items.rb
+`script_filter.rb` defines the icons and actions you can select using `lib/items.rb`
 
 `app.rb` executes on those actions using `lib/commander.rb`
 

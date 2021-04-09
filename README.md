@@ -20,3 +20,13 @@ Supported operations:
 
 - `Reverse String`
 - `Reverse List`
+
+## Development
+
+`script_filter.rb` defines the icons and actions you can select using `lib/items.rb`
+
+`app.rb` executes on those actions using `lib/commander.rb`
+
+RSpec unit tests are in `spec/commander_spec.rb`
+
+Run `bundler install` and then `rake` to execute lint and unit tests.
