@@ -6,4 +6,13 @@ RSpec.describe(Commander) {
       expect(Commander.reverse_string('hello')).to(eq('olleh'))
     }
   }
+
+  context('reverse_list') {
+    it('reverses just values') {
+      expect(Commander.reverse_list('1, 2, 3, 4')).to(eq('4, 3, 2, 1'))
+    }
+    it('reverse values inside array') {
+      expect(Commander.reverse_list('[1, 2, 3, 4]')).to(eq('[4, 3, 2, 1]'))
+    }
+  }
 }
