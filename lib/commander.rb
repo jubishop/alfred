@@ -10,13 +10,14 @@ module Commander
   end
 
   def self.reverse_list(input)
-    start_index, end_index = 0, -1
-    start_index += 1 while OPENERS.include?(input[start_index])
-    end_index -= 1 while CLOSERS.include?(input[end_index])
-    start = input[0...start_index]
-    middle = input[start_index..end_index]
-    reversed_middle = middle.split(',').map(&:strip).reverse.join(', ')
-    trail = end_index == -1 ? '' : input[end_index + 1..]
-    return "#{start}#{reversed_middle}#{trail}"
+    return input.split(',').reverse.join(',')
+  end
+
+  def self.sort_list(input)
+    return input.split(',').sort{ |a, b| a.strip <=> b.strip }.join(',')
+  end
+
+  def self.dedup_list(input)
+    return input.split(',').uniq{ |elem| elem.strip }.join(',')
   end
 end
