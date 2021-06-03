@@ -1,10 +1,4 @@
 module Commander
-  OPENERS = ['(', '[', '{'].freeze
-  private_constant :OPENERS
-
-  CLOSERS = [')', ']', '}'].freeze
-  private_constant :CLOSERS
-
   def self.reverse_string(input)
     return input.reverse
   end
