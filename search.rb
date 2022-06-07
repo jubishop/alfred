@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "net/http"
+require 'net/http'
 
 def url_exist?(url_string)
   url = URI.parse(url_string)

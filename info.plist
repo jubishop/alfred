@@ -112,11 +112,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CFD75AFB-CEFD-4D24-A0E3-E070DCCAA67F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D72EE826-958C-4109-A36E-A25C075F703F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D53B1A34-7AE8-4FBC-8A40-81FFE30D2695</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>C9E6917F-FBB7-410D-852E-4B4D1C98987F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D72EE826-958C-4109-A36E-A25C075F703F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B6EACA7-37AD-49C0-911E-86CBB90938FA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -396,29 +422,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./search.rb https://ruby-doc.org/core/{query}.html https://ruby-doc.org/stdlib/libdoc/{query}/rdoc/index.html https://rubygems.org/gems/{query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>search.rb</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9DAC898E-55B1-472B-9886-02D6FAD78DE6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -450,6 +453,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./search.rb https://ruby-doc.org/core/{query}.html https://ruby-doc.org/stdlib/libdoc/{query}/rdoc/index.html https://rubygems.org/gems/{query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>search.rb</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9DAC898E-55B1-472B-9886-02D6FAD78DE6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>subtext</key>
@@ -466,6 +492,79 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>43</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>W</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CFD75AFB-CEFD-4D24-A0E3-E070DCCAA67F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D72EE826-958C-4109-A36E-A25C075F703F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./songwhip.rb {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>search.rb</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1B6EACA7-37AD-49C0-911E-86CBB90938FA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Right click on the workflow and select "Open in Finder".  Then you'll find the two scripts that matter.  
@@ -481,6 +580,15 @@ RSpec unit tests are in `spec/commander_spec.rb`
 Run `bundler install` and then `rake` to execute lint and unit tests.</string>
 	<key>uidata</key>
 	<dict>
+		<key>1B6EACA7-37AD-49C0-911E-86CBB90938FA</key>
+		<dict>
+			<key>note</key>
+			<string>songwhip.rb</string>
+			<key>xpos</key>
+			<integer>585</integer>
+			<key>ypos</key>
+			<integer>780</integer>
+		</dict>
 		<key>243F8880-E680-4CA0-BB5F-1A1790F85539</key>
 		<dict>
 			<key>note</key>
@@ -561,6 +669,15 @@ Run `bundler install` and then `rake` to execute lint and unit tests.</string>
 			<key>ypos</key>
 			<integer>445</integer>
 		</dict>
+		<key>CFD75AFB-CEFD-4D24-A0E3-E070DCCAA67F</key>
+		<dict>
+			<key>note</key>
+			<string>Songwhip!</string>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>770</integer>
+		</dict>
 		<key>D53B1A34-7AE8-4FBC-8A40-81FFE30D2695</key>
 		<dict>
 			<key>note</key>
@@ -570,6 +687,13 @@ Run `bundler install` and then `rake` to execute lint and unit tests.</string>
 			<key>ypos</key>
 			<integer>415</integer>
 		</dict>
+		<key>D72EE826-958C-4109-A36E-A25C075F703F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>780</integer>
+		</dict>
 		<key>EA5EF84D-218B-4681-A705-BD1A99C5347D</key>
 		<dict>
 			<key>note</key>
@@ -577,7 +701,7 @@ Run `bundler install` and then `rake` to execute lint and unit tests.</string>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>600</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
